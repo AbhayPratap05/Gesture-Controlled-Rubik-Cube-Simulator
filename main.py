@@ -147,10 +147,6 @@ def execute_gesture(gesture):
         cube.rotate_face_ccw(selected_face)
         print(f"Face {selected_face} rotated counter-clockwise")
     
-    # elif gesture == "FIST":
-    #     cube.reset()
-    #     print("Cube reset")
-    
     elif gesture == "PINCH":
         # Cycle through selection modes
         selected_row = (selected_row + 1) % 3
@@ -182,7 +178,7 @@ def draw_selection_indicator(img, selected_row, selected_col):
 import time
 
 palm_hold_start = None
-palm_hold_duration = 2.5
+palm_hold_duration = 2.0
 
 print("Gesture Controls:")
 print("- Single finger swipe: Move rows/columns")
